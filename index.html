@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAFISCO - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="mobile-nav-overlay">
+      <button class="mobile-nav-close">×</button>
+      <div class="mobile-nav-content-wrapper">
+        <div class="mobile-nav-section mobile-search-icons-section">
+          <div class="mobile-search-bar">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="mobile-icons">
+            <a href="Login.html"
+              ><i class="fa-regular fa-user mobile-icon"></i> Login /
+              Register</a
+            >
+            <a href="wishlist.html"
+              ><i class="fa-regular fa-heart mobile-icon"></i> Wishlist</a
+            >
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping mobile-icon"></i> Shopping
+              Cart</a
+            >
+          </div>
+        </div>
+        <div class="mobile-nav-section">
+          <nav class="mobile-main-nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="cat_apparels.html">Apparels</a>
+            <a href="cat_spices.html">Spices</a>
+            <a href="cat_perfumes.html">Perfume Retail</a>
+            <a href="cat_gifts.html">Customized Gifts</a>
+            <a href="ordertrack.html">Tracking Package</a>
+          </nav>
+        </div>
+        <div class="mobile-nav-section">
+          <div class="mobile-language-currency-section">
+            <a href="#">Language: ENG</a>
+            <a href="#">Currency: USD</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-navbar">
+      <div class="container top-nav-content">
+        <div class="logo top-nav-logo">SAFISCO</div>
+        <div class="top-nav-right">
+          <div class="top-search-bar">
+            <input type="text" placeholder="What are you looking for?" /><button
+              type="submit"
+              class="top-search-icon"
+            >
+              🔍
+            </button>
+          </div>
+          <div class="wishlist-icon-container">
+            <a href="wishlist.html" class="icon-link" aria-label="Wishlist"
+              ><i class="fa-regular fa-heart"></i
+            ></a>
+            <span id="wishlist-count-badge">0</span>
+          </div>
+          <div class="cart-icon-container">
+            <a href="cart.html" class="icon-link" aria-label="Cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <span id="cart-count-badge">0</span>
+          </div>
+          <a href="Login.html" class="nav-auth-link">Login/Register</a>
+        </div>
+        <button class="hamburger-menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <header class="navbar">
+      <div class="container main-nav-content">
+        <div class="language-currency">
+          <div class="dropdown">
+            <button class="dropdown-button">ENG</button>
+            <div class="dropdown-content">
+              <a href="#">ENG</a><a href="#">SPA</a><a href="#">FRA</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">USD</button>
+            <div class="dropdown-content">
+              <a href="#">USD</a><a href="#">EUR</a><a href="#">GBP</a>
+            </div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="AboutUs.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <div class="dropdown">
+            <button class="dropdown-button category-button">Category</button>
+            <div class="dropdown-content">
+              <a href="cat_apparels.html">Apparels</a>
+              <a href="cat_spices.html">Spices</a>
+              <a href="cat_perfumes.html">Perfume Retail</a>
+              <a href="cat_gifts.html">Customized Gifts</a>
+            </div>
+          </div>
+          <a href="ordertrack.html">Tracking Package</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>Threads, Aromas,<br />Zest & Treasures</h1>
+            <div class="stats">
+              <div>
+                <span>50+</span>
+                <p>Products</p>
+              </div>
+              <div>
+                <span>100+</span>
+                <p>Customers</p>
+              </div>
+            </div>
+            <div class="search-bar">
+              <input type="text" placeholder="What are you looking for?" />
+              <button type="submit">🔍</button>
+            </div>
+          </div>
+          <div class="hero-image-area">
+            <div class="hero-image-placeholder">
+              <img src="Images/Logo.jpeg" alt="Hero Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-and-categories">
+        <div class="container grid-2-2-cols">
+          <div class="about-us-card card">
+            <h3>We Are SAFISCO</h3>
+            <p>
+              SAFISCO is your trusted partner for corporate gifting in Dubai...
+              Discover how thoughtful gifting can elevate your brand and
+              strengthen valuable relationships.
+            </p>
+            <a href="AboutUs.html" class="button-secondary">Learn More</a>
+          </div>
+          <div class="categories-grid">
+            <a
+              href="cat_perfumes.html"
+              class="category-card card category-perfume"
+            >
+              <h4>Perfume Retail</h4>
+              <p>SAFISCO Perfumes</p>
+              <span class="button-primary">Discover More</span>
+            </a>
+            <a
+              href="cat_apparels.html"
+              class="category-card card category-apparels"
+            >
+              <h4>Apparels</h4>
+              <p>SAFISCO Essentials</p>
+              <span class="button-primary">Discover More</span>
+            </a>
+            <a
+              href="cat_spices.html"
+              class="category-card card category-spices"
+            >
+              <h4>Spices</h4>
+              <p>SAFISCO Spices</p>
+              <span class="button-primary">Discover More</span>
+            </a>
+            <a href="cat_gifts.html" class="category-card card category-gifts">
+              <h4>Customized Gifts</h4>
+              <p>SAFISCO Souvenirs & Gifts</p>
+              <span class="button-primary">Discover More</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore-products">
+        <div class="container explore-products-container">
+          <div class="explore-content">
+            <h2>Explore Our Products</h2>
+            <p>
+              At SAFISCO, we believe the perfect corporate gift is a reflection
+              of your brand's appreciation and values...
+            </p>
+            <ul>
+              <li>
+                <strong>Premium Quality Apparel:</strong> From bespoke uniforms
+                to elegant corporate wear...
+              </li>
+              <li>
+                <strong>Exquisite Middle Eastern Spices:</strong> Aromatic
+                blends and rare finds...
+              </li>
+              <li>
+                <strong>Captivating Perfumes:</strong> Luxurious Arabian scents
+                and contemporary fragrances...
+              </li>
+              <li>
+                <strong>Personalized & Customized Gifts:</strong> Unique items
+                tailored to your brand...
+              </li>
+            </ul>
+          </div>
+          <div class="explore-image-carousel">
+            <div class="carousel-slides">
+              <img src="Images/explore1.jpg" alt="Explore Product 1" />
+              <img src="Images/explore2.jpg" alt="Explore Product 2" />
+              <img src="Images/explore3.jpg" alt="Explore Product 3" />
+              <img src="Images/explore4.jpg" alt="Explore Product 4" />
+              <img src="Images/explore5.jpg" alt="Explore Product 5" />
+            </div>
+            <div class="carousel-dots">
+              <span class="dot active" data-slide-index="0"></span>
+              <span class="dot" data-slide-index="1"></span>
+              <span class="dot" data-slide-index="2"></span>
+              <span class="dot" data-slide-index="3"></span>
+              <span class="dot" data-slide-index="4"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="latest-products">
+        <div class="container">
+          <h2>Our Latest Gifting Innovations</h2>
+          <p class="section-subtitle">
+            Discover the newest additions to our premium corporate gifting
+            collection, designed to make a lasting impact.
+          </p>
+          <div class="product-grid" id="latest-products-grid"></div>
+        </div>
+      </section>
+
+      <section class="happy-customers">
+        <div class="container">
+          <h2>Our Valued Clients Share Their Experience</h2>
+          <div class="customer-reviews-carousel">
+            <div class="review-card card">
+              <p>
+                "SAFISCO transformed our annual client appreciation gifts..."
+              </p>
+              <div class="customer-info">
+                <div class="customer-avatar-placeholder">
+                  <img src="Images/avatar1.jpg" alt="Customer Avatar" />
+                </div>
+                <div class="customer-details">
+                  <h4>Ahmed Al Maktoum</h4>
+                  <p>CEO, Apex Holdings</p>
+                </div>
+                <div class="rating-stars"><span class="stars">★★★★★</span></div>
+              </div>
+            </div>
+            <div class="review-card card">
+              <p>
+                "We needed unique gifts that showcased Dubai's rich culture..."
+              </p>
+              <div class="customer-info">
+                <div class="customer-avatar-placeholder">
+                  <img src="Images/avatar2.jpg" alt="Customer Avatar" />
+                </div>
+                <div class="customer-details">
+                  <h4>Fatima Al-Ansari</h4>
+                  <p>Head of Marketing, Elite Ventures</p>
+                </div>
+                <div class="rating-stars"><span class="stars">★★★★★</span></div>
+              </div>
+            </div>
+            <div class="review-card card">
+              <p>"The team at SAFISCO made corporate gifting effortless..."</p>
+              <div class="customer-info">
+                <div class="customer-avatar-placeholder">
+                  <img src="Images/avatar3.jpg" alt="Customer Avatar" />
+                </div>
+                <div class="customer-details">
+                  <h4>Omar Khan</h4>
+                  <p>HR Director, FutureTech Solutions</p>
+                </div>
+                <div class="rating-stars"><span class="stars">★★★★★</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <h3>SAFISCO</h3>
+            <p>Elevating Brands Through Thoughtful Gifting</p>
+            <div class="social-icons">
+    <a href="https://www.facebook.com/SafiscoLLC/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/safiscollc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@safiscollc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/gift.arabia" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+</div>
+        </div>
+        <div class="footer-links">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Collection.html">Our Collections</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Terms.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="Story.html">Our Story</a></li>
+                <li><a href="Reviews.html">Client Testimonials</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>2025 All Rights Reserved. Terms of Use | SAFISCO</p>
+    </div>
+</footer>
+
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="wishlist.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // --- Mobile Menu Logic ---
+        const hamburgerToggle = document.querySelector(
+          ".hamburger-menu-toggle"
+        );
+        const mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
+        const mobileNavClose = document.querySelector(".mobile-nav-close");
+
+        if (hamburgerToggle && mobileNavOverlay) {
+          hamburgerToggle.addEventListener("click", () => {
+            mobileNavOverlay.classList.add("open");
+          });
+        }
+
+        if (mobileNavClose && mobileNavOverlay) {
+          mobileNavClose.addEventListener("click", () => {
+            mobileNavOverlay.classList.remove("open");
+          });
+        }
+
+        // =========================================================
+        // ==== START: LATEST GIFTING INNOVATIONS SCRIPT (NEW) ====
+        // =========================================================
+        const latestProductsGrid = document.getElementById(
+          "latest-products-grid"
+        );
+        if (latestProductsGrid && typeof productsData !== "undefined") {
+          // Get the first 8 products as "latest"
+          const latestProducts = Object.entries(productsData)
+            .slice(0, 8)
+            .map((entry) => ({ id: entry[0], ...entry[1] }));
+
+          latestProductsGrid.innerHTML = ""; // Clear existing content
+
+          latestProducts.forEach((prod) => {
+            const cardLink = document.createElement("a");
+            cardLink.href = `ProductDetails.html?id=${prod.id}`;
+            cardLink.className = "product-link";
+
+            const card = document.createElement("div");
+            card.className = "product-card card";
+
+            const imageUrl =
+              prod.colors && prod.colors.length > 0
+                ? prod.colors[0].image
+                : "Images/placeholder.png";
+            const ratingStars =
+              "★".repeat(Math.round(prod.rating)) +
+              "☆".repeat(5 - Math.round(prod.rating));
+
+            card.innerHTML = `
+                        <div class="product-image-placeholder"><img src="${imageUrl}" alt="${
+              prod.title
+            }"></div>
+                        <h4>${prod.title}</h4>
+                        <p>$${prod.price.toFixed(2)}</p>
+                        <div class="product-rating-actions">
+                            <span class="stars">${ratingStars}</span>
+                            <div class="actions">
+                                <button class="wishlist-toggle-btn" data-product-id="${
+                                  prod.id
+                                }"><i class="fa-regular fa-heart"></i></button>
+                                <a href="#" class="add-to-cart-icon" data-product-id="${
+                                  prod.id
+                                }"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    `;
+            cardLink.appendChild(card);
+            latestProductsGrid.appendChild(cardLink);
+          });
+
+          // Add click listeners for the newly created cart icons
+          latestProductsGrid
+            .querySelectorAll(".add-to-cart-icon")
+            .forEach((button) => {
+              button.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent link navigation
+                event.stopPropagation(); // Prevent card link from firing
+                const productId = button.dataset.productId;
+                addToCart(productId, 1); // Add 1 item to cart
+              });
+            });
+
+          // Initialize wishlist buttons after creating them
+          if (typeof initializeWishlistButtons === "function") {
+            initializeWishlistButtons();
+            updateAllWishlistIcons();
+          }
+        }
+        // ===========================================
+        // ==== END: LATEST GIFTING INNOVATIONS SCRIPT ====
+        // ===========================================
+
+        // --- Explore Products Carousel ---
+        const exploreCarousel = document.querySelector(
+          ".explore-image-carousel"
+        );
+        if (exploreCarousel) {
+          const exploreSlidesContainer =
+            exploreCarousel.querySelector(".carousel-slides");
+          const exploreSlides = exploreSlidesContainer.querySelectorAll("img");
+          const exploreDotsContainer =
+            exploreCarousel.querySelector(".carousel-dots");
+          const exploreDots = exploreDotsContainer
+            ? exploreDotsContainer.querySelectorAll(".dot")
+            : [];
+          let currentExploreSlideIndex = 0;
+          const totalExploreSlides = exploreSlides.length;
+          let exploreSlideInterval;
+
+          function updateExploreCarousel() {
+            const offset = -currentExploreSlideIndex * 100;
+            exploreSlidesContainer.style.transform = `translateX(${offset}%)`;
+            exploreDots.forEach((dot, index) => {
+              dot.classList.toggle(
+                "active",
+                index === currentExploreSlideIndex
+              );
+            });
+          }
+
+          function nextExploreSlide() {
+            currentExploreSlideIndex =
+              (currentExploreSlideIndex + 1) % totalExploreSlides;
+            updateExploreCarousel();
+          }
+
+          if (totalExploreSlides > 0) {
+            updateExploreCarousel();
+            exploreSlideInterval = setInterval(nextExploreSlide, 5000);
+
+            exploreDots.forEach((dot) => {
+              dot.addEventListener("click", (event) => {
+                const index = parseInt(event.target.dataset.slideIndex);
+                if (index !== currentExploreSlideIndex) {
+                  clearInterval(exploreSlideInterval);
+                  currentExploreSlideIndex = index;
+                  updateExploreCarousel();
+                  exploreSlideInterval = setInterval(nextExploreSlide, 5000);
+                }
+              });
+            });
+
+            exploreCarousel.addEventListener("mouseenter", () =>
+              clearInterval(exploreSlideInterval)
+            );
+            exploreCarousel.addEventListener(
+              "mouseleave",
+              () => (exploreSlideInterval = setInterval(nextExploreSlide, 5000))
+            );
+          }
+        }
+
+        // --- Happy Customers Carousel ---
+        const customerCarousel = document.querySelector(
+          ".customer-reviews-carousel"
+        );
+        if (customerCarousel) {
+          const reviewCards = customerCarousel.querySelectorAll(".review-card");
+          const customerDotsContainer = document.querySelector(
+            ".happy-customers .carousel-dots"
+          );
+          const customerDots = customerDotsContainer
+            ? customerDotsContainer.querySelectorAll(".dot")
+            : [];
+          let currentReviewIndex = 0;
+          const totalReviews = reviewCards.length;
+          const gap = parseInt(getComputedStyle(customerCarousel).gap) || 20;
+
+          function calculateCardOffset() {
+            if (reviewCards.length === 0) return 0;
+            return reviewCards[0].offsetWidth
+              ? reviewCards[0].offsetWidth + gap
+              : 0;
+          }
+
+          function updateCustomerCarousel() {
+            const dynamicCardWidth = calculateCardOffset();
+            if (dynamicCardWidth === 0) return;
+            const offset = -currentReviewIndex * dynamicCardWidth;
+            customerCarousel.style.transition = "transform 0.5s ease-in-out";
+            customerCarousel.style.transform = `translateX(${offset}px)`;
+            customerDots.forEach((dot, index) => {
+              dot.classList.toggle("active", index === currentReviewIndex);
+            });
+          }
+
+          function nextReviewSlide() {
+            currentReviewIndex = (currentReviewIndex + 1) % totalReviews;
+            updateCustomerCarousel();
+          }
+
+          if (totalReviews > 0) {
+            updateCustomerCarousel();
+            let reviewSlideInterval = setInterval(nextReviewSlide, 6000);
+
+            customerDots.forEach((dot) => {
+              dot.addEventListener("click", (event) => {
+                const index = parseInt(event.target.dataset.slideIndex);
+                if (index !== currentReviewIndex) {
+                  clearInterval(reviewSlideInterval);
+                  currentReviewIndex = index;
+                  updateCustomerCarousel();
+                  reviewSlideInterval = setInterval(nextReviewSlide, 6000);
+                }
+              });
+            });
+
+            customerCarousel.addEventListener("mouseenter", () =>
+              clearInterval(reviewSlideInterval)
+            );
+            customerCarousel.addEventListener(
+              "mouseleave",
+              () => (reviewSlideInterval = setInterval(nextReviewSlide, 6000))
+            );
+
+            window.addEventListener("resize", () => {
+              customerCarousel.style.transition = "none";
+              updateCustomerCarousel();
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

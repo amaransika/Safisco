@@ -1,0 +1,206 @@
+/*
+  Color Theme:
+  Beige: #E9DED1
+  Charcoal Blue: #1E2934
+*/
+:root {
+    --beige: #E9DED1;
+    --charcoal-blue: #1E2934;
+    --white: #FFFFFF;
+    --border-color: #D4C9BC;
+}
+
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: var(--charcoal-blue);
+    overflow: hidden;
+}
+
+/* Full-Height Page Wrapper */
+.page-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left Column: Contains All Content */
+.content-column {
+    flex: 1 1 50%;
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 0 5%;
+    position: relative;
+}
+
+/* Right Column: Full-Height Carousel */
+.branding-section {
+    flex: 1 1 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--charcoal-blue);
+    height: 100vh;
+}
+
+/* Header & Logo Styles */
+.main-header {
+    width: 100%;
+    padding: 2.5rem 0;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+/* Main Form Section */
+.login-form-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 3rem;
+    right: 5%;
+    font-size: 1.1rem;
+    padding: 0.6rem 0.7rem;
+    background-color: #F5F1EB;
+    border-radius: 8px;
+    color: var(--charcoal-blue);
+    text-decoration: none;
+}
+
+.form-wrapper {
+    max-width: 380px;
+    width: 100%;
+}
+
+.form-wrapper h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--charcoal-blue);
+    opacity: 0.8;
+    margin-bottom: 0.25rem;
+}
+
+.form-wrapper h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--charcoal-blue);
+    margin-bottom: 2rem;
+}
+
+/* Form Elements */
+.input-group { margin-bottom: 1.25rem; }
+.input-group label { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 0.5rem; }
+.input-group input { width: 100%; padding: 0.9rem; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem; background-color: var(--white); color: var(--charcoal-blue); }
+.password-wrapper { position: relative; display: flex; align-items: center; }
+.toggle-password { position: absolute; right: 15px; cursor: pointer; color: #999; }
+.form-options { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; margin-bottom: 1.5rem; }
+.forgot-password { color: var(--charcoal-blue); text-decoration: none; font-weight: 500; }
+
+/* Custom Checkbox */
+.custom-checkbox { display: block; position: relative; padding-left: 28px; cursor: pointer; user-select: none; font-weight: 500; }
+.custom-checkbox input { position: absolute; opacity: 0; cursor: pointer; }
+.checkmark { position: absolute; top: 50%; left: 0; transform: translateY(-50%); height: 20px; width: 20px; background-color: transparent; border: 2px solid var(--charcoal-blue); border-radius: 4px; }
+.custom-checkbox input:checked ~ .checkmark { background-color: var(--charcoal-blue); }
+.checkmark:after { content: ""; position: absolute; display: none; }
+.custom-checkbox input:checked ~ .checkmark:after { display: block; }
+.custom-checkbox .checkmark:after { left: 6px; top: 2px; width: 5px; height: 10px; border: solid var(--beige); border-width: 0 3px 3px 0; transform: rotate(45deg); }
+
+/* --- NEW STYLES for Register Page --- */
+.custom-checkbox.a-bit-smaller {
+    font-size: 0.85rem; /* Make the 'I agree...' text slightly smaller */
+    font-weight: 400;
+}
+.custom-checkbox.a-bit-smaller a {
+    font-weight: 600; /* Make Terms and Privacy bold */
+    color: var(--charcoal-blue);
+    text-decoration: underline;
+}
+/* --- End New Styles --- */
+
+/* Buttons & Links */
+.btn { width: 100%; padding: 1rem; border-radius: 8px; border: none; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+.btn-primary { background-color: var(--charcoal-blue); color: var(--white); margin-bottom: 1.5rem; }
+.btn-primary:hover { opacity: 0.9; }
+.separator { text-align: center; margin-bottom: 1.5rem; color: var(--charcoal-blue); opacity: 0.5; display: flex; align-items: center; }
+.separator::before, .separator::after { content: ''; flex: 1; border-bottom: 1px solid var(--border-color); }
+.separator span { padding: 0 1rem; font-size: 0.9rem; }
+.social-login .btn { margin-bottom: 1rem; }
+.btn-secondary { background-color: transparent; color: var(--charcoal-blue); border: 1px solid var(--charcoal-blue); display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
+.btn-secondary:hover { background-color: var(--charcoal-blue); color: var(--white); }
+.btn-secondary img { width: 20px; height: 20px; }
+.btn-secondary .fa-apple { font-size: 1.5rem; }
+.signup-link { text-align: center; margin-top: 2rem; }
+.signup-link a { color: var(--charcoal-blue); font-weight: 700; text-decoration: none; }
+
+/* Carousel Styles */
+.carousel-slides { display: flex; width: 500%; height: 100%; transition: transform 0.7s ease-in-out; }
+.slide { width: 20%; height: 100%; flex-shrink: 0; }
+.slide img { width: 100%; height: 100%; object-fit: cover; }
+.quote-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 3rem; background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%); color: var(--white); text-align: center; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; }
+.quote-container { margin-bottom: 1.5rem; }
+.quote-container blockquote { font-size: 1.5rem; font-weight: 500; margin-bottom: 1rem; color: var(--white); text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+.quote-container figcaption { color: var(--white); opacity: 0.9; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+.carousel-dots { display: flex; justify-content: center; gap: 10px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.5); cursor: pointer; transition: background-color 0.3s ease; }
+.dot.active { background-color: var(--white); }
+
+/* Footer Styles */
+.main-footer {
+    width: 100%;
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.main-footer a { color: var(--charcoal-blue); text-decoration: none; font-weight: 500; }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    body {
+        overflow: auto;
+    }
+    .page-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .branding-section {
+        display: none;
+    }
+    .content-column {
+        flex: 1 1 100%;
+        padding: 1.5rem;
+    }
+    .cart-icon {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+    .main-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews - SAFISCO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="mobile-nav-overlay">
+      <button class="mobile-nav-close">×</button>
+      <div class="mobile-nav-content-wrapper">
+        <div class="mobile-nav-section mobile-search-icons-section">
+          <div class="mobile-search-bar">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="mobile-icons">
+            <a href="Login.html"
+              ><i class="fa-regular fa-user mobile-icon"></i> Login /
+              Register</a
+            >
+            <a href="wishlist.html"
+              ><i class="fa-regular fa-heart mobile-icon"></i> Wishlist</a
+            >
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping mobile-icon"></i> Shopping
+              Cart</a
+            >
+          </div>
+        </div>
+        <div class="mobile-nav-section">
+          <nav class="mobile-main-nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="cat_apparels.html">Apparels</a>
+            <a href="cat_spices.html">Spices</a>
+            <a href="cat_perfumes.html">Perfume Retail</a>
+            <a href="cat_gifts.html">Customized Gifts</a>
+            <a href="ordertrack.html">Tracking Package</a>
+          </nav>
+        </div>
+        <div class="mobile-nav-section">
+          <div class="mobile-language-currency-section">
+            <a href="#">Language: ENG</a>
+            <a href="#">Currency: USD</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-navbar">
+      <div class="container top-nav-content">
+        <div class="logo top-nav-logo">SAFISCO</div>
+        <div class="top-nav-right">
+          <div class="top-search-bar">
+            <input type="text" placeholder="What are you looking for?" /><button
+              type="submit"
+              class="top-search-icon"
+            >
+              🔍
+            </button>
+          </div>
+          <div class="wishlist-icon-container">
+            <a href="wishlist.html" class="icon-link" aria-label="Wishlist"
+              ><i class="fa-regular fa-heart"></i
+            ></a>
+            <span id="wishlist-count-badge">0</span>
+          </div>
+          <div class="cart-icon-container">
+            <a href="cart.html" class="icon-link" aria-label="Cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <span id="cart-count-badge">0</span>
+          </div>
+          <a href="Login.html" class="nav-auth-link">Login/Register</a>
+        </div>
+        <button class="hamburger-menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <header class="navbar">
+      <div class="container main-nav-content">
+        <div class="language-currency">
+          <div class="dropdown">
+            <button class="dropdown-button">ENG</button>
+            <div class="dropdown-content">
+              <a href="#">ENG</a><a href="#">SPA</a><a href="#">FRA</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">USD</button>
+            <div class="dropdown-content">
+              <a href="#">USD</a><a href="#">EUR</a><a href="#">GBP</a>
+            </div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="AboutUs.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <div class="dropdown">
+            <button class="dropdown-button category-button">Category</button>
+            <div class="dropdown-content">
+              <a href="cat_apparels.html">Apparels</a>
+              <a href="cat_spices.html">Spices</a>
+              <a href="cat_perfumes.html">Perfume Retail</a>
+              <a href="cat_gifts.html">Customized Gifts</a>
+            </div>
+          </div>
+          <a href="ordertrack.html">Tracking Package</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- === MAIN CONTENT FOR REVIEWS PAGE === -->
+    <main>
+      <section class="reviews-hero-section">
+        <div class="container">
+          <h1>What Our Clients Say</h1>
+          <p class="section-subtitle">
+            Real feedback from our valued partners and customers.
+          </p>
+        </div>
+      </section>
+
+      <section class="reviews-grid-section">
+        <div class="container">
+          <!-- The masonry grid where reviews will be dynamically inserted -->
+          <div class="masonry-grid" id="masonry-grid-container">
+            <!-- Javascript will populate this -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h3>SAFISCO</h3>
+          <p>Elevating Brands Through Thoughtful Gifting</p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/SafiscoLLC/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/safiscollc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@safiscollc"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/gift.arabia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Collection.html">Our Collections</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="Terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="Story.html">Our Story</a></li>
+            <li><a href="Reviews.html">Client Testimonials</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>2025 All Rights Reserved. Terms of Use | SAFISCO</p>
+      </div>
+    </footer>
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="wishlist.js"></script>
+
+    <!-- JAVASCRIPT TO POPULATE REVIEWS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // This is the same product database from your details page.
+        const productsData = {
+          "silk-scarf-001": {
+            title: "Elegant Silk Scarf",
+            reviewData: [
+              {
+                author: "Fatima A.",
+                rating: 5,
+                date: "June 20, 2025",
+                text: "Absolutely stunning! The silk is so soft and the colors are vibrant. A truly luxurious gift.",
+              },
+            ],
+          },
+          "apparel-men-001": {
+            title: "Men's Executive Polo",
+            reviewData: [
+              {
+                author: "David K.",
+                rating: 4,
+                date: "June 23, 2025",
+                text: "Solid polo shirt, very comfortable for the entire workday.",
+              },
+            ],
+          },
+          "apparel-men-002": {
+            title: "Men's Softshell Jacket",
+            reviewData: [
+              {
+                author: "Alex R.",
+                rating: 5,
+                date: "June 22, 2025",
+                text: "Excellent jacket, looks very professional with our company logo embroidered on it. Kept us warm during the outdoor event.",
+              },
+            ],
+          },
+          "apparel-women-001": {
+            title: "Women's Business Blouse",
+            reviewData: [
+              {
+                author: "Maria G.",
+                rating: 4,
+                date: "June 21, 2025",
+                text: "Lovely blouse, fits perfectly and the fabric is very high quality.",
+              },
+            ],
+          },
+          "apparel-kids-001": {
+            title: "Kids' Team T-Shirt",
+            reviewData: [
+              {
+                author: "Sarah P.",
+                rating: 5,
+                date: "June 20, 2025",
+                text: "The kids loved their team shirts! The printing was bright and the quality is great. They've held up well after several washes.",
+              },
+            ],
+          },
+          "spice-box-002": {
+            title: "Artisan Spice Box",
+            reviewData: [
+              {
+                author: "Yusuf K.",
+                rating: 5,
+                date: "June 21, 2025",
+                text: "A fantastic collection of high-quality spices. The aroma is incredible! It makes a very impressive gift for any foodie.",
+              },
+              {
+                author: "Chloe M.",
+                rating: 5,
+                date: "June 19, 2025",
+                text: "I bought this for my father and he was thrilled. The wooden box itself is beautiful and the spices are fresh and fragrant.",
+              },
+            ],
+          },
+          "oud-perfume-003": {
+            title: "Luxury Oud Perfume",
+            reviewData: [
+              {
+                author: "Noora S.",
+                rating: 5,
+                date: "June 22, 2025",
+                text: "This is the most exquisite oud I have ever smelled. It's rich and complex without being overpowering. Worth every penny.",
+              },
+              {
+                author: "Michael B.",
+                rating: 5,
+                date: "June 20, 2025",
+                text: "A truly luxurious and sophisticated scent. I receive compliments every time I wear it. It smells of pure class.",
+              },
+            ],
+          },
+          "pen-set-004": {
+            title: "Custom Engraved Pen Set",
+            reviewData: [
+              {
+                author: "Sarah I.",
+                rating: 5,
+                date: "June 17, 2025",
+                text: "We ordered these for our corporate event and the custom engraving was perfect. They look very professional and write smoothly.",
+              },
+            ],
+          },
+          "gift-002": {
+            title: "Engraved Leather Journal",
+            reviewData: [
+              {
+                author: "Olivia W.",
+                rating: 5,
+                date: "April 28, 2025",
+                text: "The leather is soft and the engraving was flawless. Made for a very special corporate gift that our clients adored.",
+              },
+            ],
+          },
+        };
+
+        const testimonials = [];
+        for (const productId in productsData) {
+          const product = productsData[productId];
+          if (product.reviewData && product.reviewData.length > 0) {
+            product.reviewData.forEach((review) => {
+              // Add the product title to each review object
+              testimonials.push({ ...review, productTitle: product.title });
+            });
+          }
+        }
+
+        const gridContainer = document.getElementById("masonry-grid-container");
+
+        if (testimonials.length > 0) {
+          testimonials.forEach((testimonial) => {
+            const card = document.createElement("div");
+            card.className = "masonry-card";
+
+            let starsHTML = "";
+            for (let i = 0; i < 5; i++) {
+              starsHTML += `<i class="fa-${
+                i < testimonial.rating ? "solid" : "regular"
+              } fa-star"></i>`;
+            }
+
+            card.innerHTML = `
+                        <div class="card-stars">${starsHTML}</div>
+                        <p class="card-text">“${testimonial.text}”</p>
+                        <div class="card-author">- ${testimonial.author}</div>
+                        <div class="card-product-reviewed">on <strong>${testimonial.productTitle}</strong></div>
+                    `;
+            gridContainer.appendChild(card);
+          });
+        } else {
+          gridContainer.innerHTML =
+            "<p>No reviews have been submitted yet.</p>";
+        }
+      });
+    </script>
+  </body>
+</html>

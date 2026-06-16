@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAFISCO - Product Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+  <div class="mobile-nav-overlay">
+        <button class="mobile-nav-close">×</button>
+        <div class="mobile-nav-content-wrapper">
+            <div class="mobile-nav-section mobile-search-icons-section">
+                <div class="mobile-search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="mobile-icons">
+                    <a href="Login.html"><i class="fa-regular fa-user mobile-icon"></i> Login / Register</a>
+                    <a href="wishlist.html"><i class="fa-regular fa-heart mobile-icon"></i> Wishlist</a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping mobile-icon"></i> Shopping Cart</a>
+                </div>
+            </div>
+            <div class="mobile-nav-section">
+                <nav class="mobile-main-nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="cat_apparels.html">Apparels</a>
+                    <a href="cat_spices.html">Spices</a>
+                    <a href="cat_perfumes.html">Perfume Retail</a>
+                    <a href="cat_gifts.html">Customized Gifts</a>
+                    <a href="ordertrack.html">Tracking Package</a>
+                </nav>
+            </div>
+            <div class="mobile-nav-section">
+                <div class="mobile-language-currency-section">
+                    <a href="#">Language: ENG</a>
+                    <a href="#">Currency: USD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="top-navbar">
+        <div class="container top-nav-content">
+            <div class="logo top-nav-logo">SAFISCO</div>
+            <div class="top-nav-right">
+                <div class="top-search-bar"><input type="text" placeholder="What are you looking for?"><button type="submit" class="top-search-icon">🔍</button></div>
+                <div class="wishlist-icon-container">
+                    <a href="wishlist.html" class="icon-link" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                    <span id="wishlist-count-badge">0</span>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="cart.html" class="icon-link" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span id="cart-count-badge">0</span>
+                </div>
+                <a href="Login.html" class="nav-auth-link">Login/Register</a> 
+            </div>
+            <button class="hamburger-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container main-nav-content">
+            <div class="language-currency">
+                <div class="dropdown"><button class="dropdown-button">ENG</button><div class="dropdown-content"><a href="#">ENG</a><a href="#">SPA</a><a href="#">FRA</a></div></div>
+                <div class="dropdown"><button class="dropdown-button">USD</button><div class="dropdown-content"><a href="#">USD</a><a href="#">EUR</a><a href="#">GBP</a></div></div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="faq.html">FAQ</a>
+                <div class="dropdown">
+                    <button class="dropdown-button category-button">Category</button>
+                    <div class="dropdown-content">
+                        <a href="cat_apparels.html">Apparels</a>
+                        <a href="cat_spices.html">Spices</a>
+                        <a href="cat_perfumes.html">Perfume Retail</a>
+                        <a href="cat_gifts.html">Customized Gifts</a>
+                    </div>
+                </div>
+                <a href="ordertrack.html">Tracking Package</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+      <section class="product-details-section">
+        <div class="container product-details-container">
+          <div class="product-image-gallery">
+            <div class="main-product-image">
+              <img id="mainProductImage" src="" alt="Product Name" />
+            </div>
+            <div class="product-thumbnails"></div>
+          </div>
+          <div class="product-info">
+            <h1 id="productTitle">Product Title</h1>
+            <p class="product-price" id="productPrice">$0.00</p>
+            <div class="product-rating">
+              <span class="stars"></span>
+              <a
+                href="#reviews-tab"
+                id="reviews-count-text"
+                class="reviews-count"
+                style="text-decoration: underline"
+              ></a>
+            </div>
+            <p
+              class="product-short-description"
+              id="productShortDescription"
+            ></p>
+
+            <div class="product-options">
+              <div class="option-group" id="color-option-group">
+                <label>Color:</label>
+                <div class="color-swatches"></div>
+              </div>
+              <div class="option-group" id="size-option-group">
+                <label>Size:</label>
+                <div class="size-selector-modern"></div>
+              </div>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-selector">
+                <button class="quantity-btn" data-action="decrease">-</button
+                ><input
+                  type="text"
+                  value="1"
+                  class="quantity-input"
+                  id="quantity"
+                /><button class="quantity-btn" data-action="increase">+</button>
+              </div>
+              <button class="button-primary add-to-cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+              <button
+                class="button-secondary add-to-wishlist-btn wishlist-toggle-btn"
+                aria-label="Add to Wishlist"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="delivery-info">
+              <h3>Delivery & Returns</h3>
+              <ul>
+                <li>Free delivery for orders over $140 within the UAE.</li>
+                <li>Estimated delivery: 2-3 business days.</li>
+                <li>Hassle-free returns within 30 days.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container product-info-tabs">
+          <nav class="tab-nav">
+            <a class="tab-link active" data-tab="description">Description</a>
+            <a class="tab-link" data-tab="reviews" id="reviews-tab-button"
+              >Reviews</a
+            >
+          </nav>
+          <div class="tab-content">
+            <div class="tab-pane active" id="description-tab-content">
+              <p id="productLongDescription"></p>
+            </div>
+            <div class="tab-pane" id="reviews-tab-content"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="related-products-section latest-products">
+        <div class="container">
+          <h2>You might also like</h2>
+          <div class="product-grid" id="related-products-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h3>SAFISCO</h3>
+          <p>Elevating Brands Through Thoughtful Gifting</p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/SafiscoLLC/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i></a
+            ><a
+              href="https://www.instagram.com/safiscollc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i></a
+            ><a
+              href="https://www.tiktok.com/@safiscollc"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i></a
+            ><a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i></a
+            ><a
+              href="https://www.linkedin.com/company/gift.arabia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Collection.html">Our Collections</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="Terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="Story.html">Our Story</a></li>
+            <li><a href="Reviews.html">Client Testimonials</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 All Rights Reserved. Terms of Use | SAFISCO</p>
+      </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="wishlist.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // --- MOBILE MENU LOGIC ---
+        const hamburgerToggle = document.querySelector(
+            ".hamburger-menu-toggle"
+          ),
+          mobileNavOverlay = document.querySelector(".mobile-nav-overlay"),
+          mobileNavClose = document.querySelector(".mobile-nav-close");
+        hamburgerToggle &&
+          mobileNavOverlay &&
+          hamburgerToggle.addEventListener("click", () => {
+            mobileNavOverlay.classList.add("open");
+          }),
+          mobileNavClose &&
+            mobileNavOverlay &&
+            mobileNavClose.addEventListener("click", () => {
+              mobileNavOverlay.classList.remove("open");
+            });
+
+        // --- PRODUCT DETAILS LOGIC ---
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get("id");
+        const product = productsData[productId];
+
+        // Element references
+        const mainProductImage = document.getElementById("mainProductImage"),
+          productTitle = document.getElementById("productTitle"),
+          productRatingStars = document.querySelector(".product-rating .stars"),
+          reviewsCountText = document.getElementById("reviews-count-text"),
+          productPrice = document.getElementById("productPrice"),
+          productShortDescription = document.getElementById(
+            "productShortDescription"
+          ),
+          productLongDescription = document.getElementById(
+            "productLongDescription"
+          ),
+          thumbnailsContainer = document.querySelector(".product-thumbnails"),
+          colorOptionGroup = document.getElementById("color-option-group"),
+          sizeOptionGroup = document.getElementById("size-option-group"),
+          relatedProductsGrid = document.getElementById(
+            "related-products-grid"
+          ),
+          relatedProductsSection = document.querySelector(
+            ".related-products-section"
+          ),
+          addToCartBtn = document.querySelector(".add-to-cart-btn"),
+          quantityInput = document.getElementById("quantity"),
+          addToWishlistBtn = document.querySelector(".add-to-wishlist-btn");
+        const colorSwatchesContainer =
+          document.querySelector(".color-swatches");
+        const sizeSelectorContainer = document.querySelector(
+          ".size-selector-modern"
+        );
+
+        if (!product) {
+          const mainContent = document.querySelector(
+            ".product-details-section"
+          );
+          mainContent.innerHTML = `<div class="container" style="padding: 40px; text-align: center;"><h2>Product Not Found</h2><p>Sorry, the product you are looking for could not be found.</p></div>`;
+          document.querySelector(".related-products-section").style.display =
+            "none";
+          return;
+        }
+
+        // --- RENDER FUNCTIONS ---
+        function renderPrice() {
+          let currentPrice = product.price;
+          if (product.sizes) {
+            const activeSizeBtn =
+              sizeSelectorContainer.querySelector(".size-btn.active");
+            if (activeSizeBtn) {
+              const selectedSize = activeSizeBtn.dataset.size;
+              currentPrice = product.sizes[selectedSize];
+            } else {
+              currentPrice = Object.values(product.sizes)[0];
+            }
+          }
+          productPrice.textContent = `$${currentPrice.toFixed(2)}`;
+        }
+
+        function renderColorOptions() {
+          if (!product.colors || product.colors.length <= 1) {
+            colorOptionGroup.style.display = "none";
+            if (product.colors) mainProductImage.src = product.colors[0].image;
+            return;
+          }
+          colorOptionGroup.style.display = "flex";
+          colorSwatchesContainer.innerHTML = "";
+          thumbnailsContainer.innerHTML = "";
+
+          product.colors.forEach((color, index) => {
+            const swatch = document.createElement("button");
+            swatch.className = "color-swatch";
+            swatch.style.backgroundColor = color.hex || "#ccc";
+            swatch.dataset.image = color.image;
+            swatch.dataset.thumbnail = color.thumbnail;
+            if (index === 0) swatch.classList.add("active");
+            swatch.addEventListener("click", () => {
+              mainProductImage.src = color.image;
+              document
+                .querySelectorAll(".color-swatch")
+                .forEach((s) => s.classList.remove("active"));
+              swatch.classList.add("active");
+            });
+            colorSwatchesContainer.appendChild(swatch);
+          });
+          mainProductImage.src = product.colors[0].image;
+        }
+
+        function renderSizeOptions() {
+          if (!product.sizes) {
+            sizeOptionGroup.style.display = "none";
+            return;
+          }
+          sizeOptionGroup.style.display = "flex";
+          sizeSelectorContainer.innerHTML = "";
+          Object.keys(product.sizes).forEach((size, index) => {
+            const sizeBtn = document.createElement("button");
+            sizeBtn.className = "size-btn";
+            sizeBtn.textContent = size.toUpperCase();
+            sizeBtn.dataset.size = size;
+            if (index === 0) sizeBtn.classList.add("active");
+            sizeBtn.addEventListener("click", () => {
+              document
+                .querySelectorAll(".size-btn")
+                .forEach((btn) => btn.classList.remove("active"));
+              sizeBtn.classList.add("active");
+              renderPrice();
+            });
+            sizeSelectorContainer.appendChild(sizeBtn);
+          });
+        }
+
+        // --- INITIAL PAGE POPULATION ---
+        document.title = `${product.title} - SAFISCO`;
+        productTitle.textContent = product.title;
+        productRatingStars.textContent = product.rating;
+        productShortDescription.textContent = product.shortDesc;
+        productLongDescription.textContent = product.longDesc;
+
+        renderColorOptions();
+        renderSizeOptions();
+        renderPrice();
+
+        // --- TABS, REVIEWS, AND OTHER LOGIC ---
+        const tabs = document.querySelectorAll(".tab-link"),
+          tabPanes = document.querySelectorAll(".tab-pane");
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            const target = document.getElementById(
+              tab.dataset.tab + "-tab-content"
+            );
+            tabs.forEach((t) => t.classList.remove("active")),
+              tab.classList.add("active"),
+              tabPanes.forEach((pane) => pane.classList.remove("active")),
+              target.classList.add("active");
+          });
+        });
+        const reviewCount = product.reviewData.length;
+        reviewsCountText.textContent = `(${reviewCount} Reviews)`;
+        document.getElementById(
+          "reviews-tab-button"
+        ).textContent = `Reviews (${reviewCount})`;
+        function displayReviews() {
+          const container = document.getElementById("reviews-tab-content");
+          container.innerHTML = "";
+          if (reviewCount === 0) {
+            container.innerHTML =
+              "<p>There are no reviews for this product yet.</p>";
+            return;
+          }
+          product.reviewData.forEach((review) => {
+            const reviewCard = document.createElement("div");
+            reviewCard.className = "review-card";
+            let starsHTML = "";
+            for (let i = 0; i < 5; i++) {
+              starsHTML += `<i class="fa-${
+                i < review.rating ? "solid" : "regular"
+              } fa-star"></i>`;
+            }
+            reviewCard.innerHTML = `<div class="review-rating">${starsHTML}</div><p class="review-text">${review.text}</p><div class="review-author-date"><strong>${review.author}</strong> - <span>${review.date}</span></div>`;
+            container.appendChild(reviewCard);
+          });
+        }
+        displayReviews();
+
+        // --- Related Products, Wishlist, Cart, Quantity (Mostly Unchanged) ---
+        if (addToCartBtn) {
+          addToCartBtn.addEventListener("click", () => {
+            const quantity = parseInt(quantityInput.value);
+            addToCart(productId, quantity);
+          });
+        }
+        if (addToWishlistBtn) {
+          addToWishlistBtn.dataset.productId = productId;
+          updateAllWishlistIcons();
+          initializeWishlistButtons();
+        }
+        const quantitySelector = document.querySelector(".quantity-selector");
+        if (quantitySelector) {
+          quantitySelector.addEventListener("click", (e) => {
+            if (e.target.classList.contains("quantity-btn")) {
+              const t = e.target.dataset.action;
+              let n = parseInt(quantityInput.value, 10);
+              "increase" === t ? n++ : "decrease" === t && n > 1 && n--,
+                (quantityInput.value = n);
+            }
+          });
+        }
+        const currentCategory = product.category;
+        const relatedProducts = Object.entries(productsData)
+          .filter(
+            ([id, prod]) =>
+              prod.category === currentCategory && id !== productId
+          )
+          .map((entry) => ({ id: entry[0], ...entry[1] }))
+          .slice(0, 4);
+        relatedProductsGrid.innerHTML = "";
+        if (relatedProducts.length > 0) {
+          relatedProductsSection.style.display = "block";
+          relatedProducts.forEach((relatedProd) => {
+            const cardLink = document.createElement("a");
+            cardLink.href = `ProductDetails.html?id=${relatedProd.id}`;
+            cardLink.className = "product-link";
+            const card = document.createElement("div");
+            card.className = "product-card card";
+            const imageUrl =
+              relatedProd.colors && relatedProd.colors.length > 0
+                ? relatedProd.colors[0].image
+                : "Images/placeholder.png";
+            card.innerHTML = `<div class="product-image-placeholder"><img src="${imageUrl}" alt="${
+              relatedProd.title
+            }"></div><h4>${
+              relatedProd.title
+            }</h4><p>$${relatedProd.price.toFixed(
+              2
+            )}</p><div class="product-rating-actions"><span class="stars">${
+              relatedProd.rating
+            }</span><div class="actions"><button class="wishlist-toggle-btn" data-product-id="${
+              relatedProd.id
+            }"><i class="fa-regular fa-heart"></i></button><i class="fa-solid fa-cart-shopping"></i></div></div>`;
+            cardLink.appendChild(card);
+            relatedProductsGrid.appendChild(cardLink);
+          });
+          initializeWishlistButtons();
+          updateAllWishlistIcons();
+        } else {
+          relatedProductsSection.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

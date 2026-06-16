@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - SAFISCO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body id="cart-page">
+
+    <div class="mobile-nav-overlay">
+        <button class="mobile-nav-close">×</button>
+        <div class="mobile-nav-content-wrapper">
+            <div class="mobile-nav-section mobile-search-icons-section">
+                <div class="mobile-search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="mobile-icons">
+                    <a href="Login.html"><i class="fa-regular fa-user mobile-icon"></i> Login / Register</a>
+                    <a href="wishlist.html"><i class="fa-regular fa-heart mobile-icon"></i> Wishlist</a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping mobile-icon"></i> Shopping Cart</a>
+                </div>
+            </div>
+            <div class="mobile-nav-section">
+                <nav class="mobile-main-nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="cat_apparels.html">Apparels</a>
+                    <a href="cat_spices.html">Spices</a>
+                    <a href="cat_perfumes.html">Perfume Retail</a>
+                    <a href="cat_gifts.html">Customized Gifts</a>
+                    <a href="ordertrack.html">Tracking Package</a>
+                </nav>
+            </div>
+            <div class="mobile-nav-section">
+                <div class="mobile-language-currency-section">
+                    <a href="#">Language: ENG</a>
+                    <a href="#">Currency: USD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="top-navbar">
+        <div class="container top-nav-content">
+            <div class="logo top-nav-logo">SAFISCO</div>
+            <div class="top-nav-right">
+                <div class="top-search-bar"><input type="text" placeholder="What are you looking for?"><button type="submit" class="top-search-icon">🔍</button></div>
+                <div class="wishlist-icon-container">
+                    <a href="wishlist.html" class="icon-link" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                    <span id="wishlist-count-badge">0</span>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="cart.html" class="icon-link" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span id="cart-count-badge">0</span>
+                </div>
+                <a href="Login.html" class="nav-auth-link">Login/Register</a> 
+            </div>
+            <button class="hamburger-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container main-nav-content">
+            <div class="language-currency">
+                <div class="dropdown"><button class="dropdown-button">ENG</button><div class="dropdown-content"><a href="#">ENG</a><a href="#">SPA</a><a href="#">FRA</a></div></div>
+                <div class="dropdown"><button class="dropdown-button">USD</button><div class="dropdown-content"><a href="#">USD</a><a href="#">EUR</a><a href="#">GBP</a></div></div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="faq.html">FAQ</a>
+                <div class="dropdown">
+                    <button class="dropdown-button category-button">Category</button>
+                    <div class="dropdown-content">
+                        <a href="cat_apparels.html">Apparels</a>
+                        <a href="cat_spices.html">Spices</a>
+                        <a href="cat_perfumes.html">Perfume Retail</a>
+                        <a href="cat_gifts.html">Customized Gifts</a>
+                    </div>
+                </div>
+                <a href="ordertrack.html">Tracking Package</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="cart-section">
+            <div class="container">
+                <h1>Your Shopping Cart</h1>
+                <div class="cart-layout">
+                    <div class="cart-items-container" id="cart-items"></div>
+                    <div class="cart-summary" id="cart-summary"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>SAFISCO</h3>
+                <p>Elevating Brands Through Thoughtful Gifting</p>
+                <div class="social-icons">
+    <a href="https://www.facebook.com/SafiscoLLC/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/safiscollc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@safiscollc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/gift.arabia" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+</div>
+            </div>
+            <div class="footer-links">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Collection.html">Our Collections</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="Terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="Story.html">Our Story</a></li>
+                    <li><a href="Reviews.html">Client Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 All Rights Reserved. Terms of Use | SAFISCO</p>
+        </div>
+    </footer>
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Mobile Menu Logic ---
+            const hamburgerToggle = document.querySelector('.hamburger-menu-toggle');
+            const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+            const mobileNavClose = document.querySelector('.mobile-nav-close');
+            if(hamburgerToggle){hamburgerToggle.addEventListener('click', () => {mobileNavOverlay.classList.add('open');});}
+            if(mobileNavClose){mobileNavClose.addEventListener('click', () => {mobileNavOverlay.classList.remove('open');});}
+
+            // --- Cart Display Logic ---
+            function displayCartItems() {
+                const cart = getCart();
+                const cartContainer = document.getElementById('cart-items');
+                const summaryContainer = document.getElementById('cart-summary');
+                
+                cartContainer.innerHTML = '';
+                
+                if (cart.length === 0) {
+                    cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+                    summaryContainer.style.display = 'none';
+                    return;
+                }
+
+                summaryContainer.style.display = 'block';
+                let subtotal = 0;
+
+                const table = document.createElement('table');
+                table.className = 'cart-table';
+                table.innerHTML = `<thead><tr><th colspan="2">Product</th><th>Price</th><th>Quantity</th><th>Total</th><th></th></tr></thead><tbody></tbody>`;
+                const tbody = table.querySelector('tbody');
+
+                cart.forEach(item => {
+                    const product = productsData[item.id];
+                    if (product) {
+                        const itemTotal = product.price * item.quantity;
+                        subtotal += itemTotal;
+
+                        const row = document.createElement('tr');
+                        row.className = 'cart-item-row';
+                        row.innerHTML = `
+                            <td><img src="${product.colors[0].image}" alt="${product.title}" class="cart-item-image"></td>
+                            <td>${product.title}</td>
+                            <td>$${product.price.toFixed(2)}</td>
+                            <td><input type="number" value="${item.quantity}" min="1" class="cart-item-quantity" onchange="updateQuantity('${item.id}', parseInt(this.value))"></td>
+                            <td>$${itemTotal.toFixed(2)}</td>
+                            <td><button class="cart-item-remove" onclick="removeFromCart('${item.id}')">×</button></td>
+                        `;
+                        tbody.appendChild(row);
+                    }
+                });
+
+                cartContainer.appendChild(table);
+
+                const shipping = subtotal > 140 ? 0 : 15;
+                const total = subtotal + shipping;
+
+                summaryContainer.innerHTML = `
+                    <h3>Cart Summary</h3>
+                    <div class="summary-row"><span>Subtotal</span><span>$${subtotal.toFixed(2)}</span></div>
+                    <div class="summary-row"><span>Shipping</span><span>${shipping > 0 ? '$' + shipping.toFixed(2) : 'Free'}</span></div>
+                    <hr>
+                    <div class="summary-row total-row"><span>Total</span><span>$${total.toFixed(2)}</span></div>
+                    <a href="checkout.html" class="button-primary checkout-btn">Proceed to Checkout</a>
+                `;
+            }
+
+            displayCartItems();
+        });
+    </script>
+</body>
+</html>
